@@ -1,7 +1,7 @@
 /* =========================================
    CALCULATOR STATE
 ========================================= */
-
+// Add time to calculation history
 let currentValue = "0";
 let previousValue = "";
 let operator = null;
