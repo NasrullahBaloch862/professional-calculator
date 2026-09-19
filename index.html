@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Professional online calculator for fast and accurate calculations.">
+
+    <meta name="keywords"
+          content="calculator, online calculator, math calculator, percentage calculator">
+
+    <meta name="author"
+          content="Professional Calculator">
+
+    <title>SmartCalc - Professional Online Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <main class="calculator-wrapper">
+
+        <!-- Calculator -->
+        <section class="calculator">
+
+            <!-- Header -->
+            <header class="calculator-header">
+                <div>
+                    <h1>SmartCalc</h1>
+                    <p>Professional Calculator</p>
+                </div>
+
+                <button
+                    class="history-toggle"
+                    id="historyToggle"
+                    aria-label="Open calculation history">
+                    History
+                </button>
+            </header>
+
+
+            <!-- Display -->
+            <div class="display">
+
+                <div class="previous-value" id="previousValue"></div>
+
+                <div class="current-value-row">
+
+                    <div
+                        class="current-value"
+                        id="currentValue">
+                        0
+                    </div>
+
+                    <button
+                        class="copy-button"
+                        id="copyButton"
+                        title="Copy result"
+                        aria-label="Copy result">
+                        ⧉
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Keypad -->
+            <div class="keypad">
+
+                <!-- Row 1 -->
+                <button
+                    class="key function-key"
+                    data-action="clear">
+                    AC
+                </button>
+
+                <button
+                    class="key function-key"
+                    data-action="delete">
+                    DEL
+                </button>
+
+                <button
+                    class="key function-key"
+                    data-action="percentage">
+                    %
+                </button>
+
+                <button
+                    class="key operator-key"
+                    data-operator="/">
+                    ÷
+                </button>
+
+
+                <!-- Row 2 -->
+                <button class="key" data-number="7">7</button>
+                <button class="key" data-number="8">8</button>
+                <button class="key" data-number="9">9</button>
+
+                <button
+                    class="key operator-key"
+                    data-operator="*">
+                    ×
+                </button>
+
+
+                <!-- Row 3 -->
+                <button class="key" data-number="4">4</button>
+                <button class="key" data-number="5">5</button>
+                <button class="key" data-number="6">6</button>
+
+                <button
+                    class="key operator-key"
+                    data-operator="-">
+                    −
+                </button>
+
+
+                <!-- Row 4 -->
+                <button class="key" data-number="1">1</button>
+                <button class="key" data-number="2">2</button>
+                <button class="key" data-number="3">3</button>
+
+                <button
+                    class="key operator-key"
+                    data-operator="+">
+                    +
+                </button>
+
+
+                <!-- Row 5 -->
+                <button
+                    class="key function-key"
+                    data-action="toggle-sign">
+                    +/−
+                </button>
+
+                <button
+                    class="key"
+                    data-number="0">
+                    0
+                </button>
+
+                <button
+                    class="key"
+                    data-number=".">
+                    .
+                </button>
+
+                <button
+                    class="key equals-key"
+                    data-action="calculate">
+                    =
+                </button>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="calculator-footer">
+                <span>Fast & Accurate</span>
+                <span>•</span>
+                <span>Keyboard Supported</span>
+            </footer>
+
+        </section>
+
+
+        <!-- History Panel -->
+        <aside
+            class="history-panel"
+            id="historyPanel">
+
+            <div class="history-header">
+
+                <div>
+                    <h2>Calculation History</h2>
+                    <p>Your recent calculations</p>
+                </div>
+
+                <button
+                    id="closeHistory"
+                    class="close-history"
+                    aria-label="Close history">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div
+                class="history-list"
+                id="historyList">
+
+                <div class="empty-history">
+                    <span>⌁</span>
+                    <p>No calculations yet</p>
+                </div>
+
+            </div>
+
+
+            <button
+                class="clear-history"
+                id="clearHistory">
+                Clear History
+            </button>
+
+        </aside>
+
+    </main>
+
+
+    <!-- Toast Notification -->
+    <div
+        class="toast"
+        id="toast">
+        Result copied!
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
