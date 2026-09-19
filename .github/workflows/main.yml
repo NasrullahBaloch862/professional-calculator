@@ -20,7 +20,7 @@ jobs:
         run: |
           test -f index.html
           test -f style.css
-          test -f wrong.js
+          test -f script.js
 
       - name: Check HTML
         run: |
