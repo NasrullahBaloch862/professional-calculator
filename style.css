@@ -14,20 +14,20 @@
     --calculator: #111827;
     --display: #0f172a;
 
-    --button: #1e293b;
-    --button-hover: #334155;
+    --button: #374151;
+    --button-hover: #4b5563;
 
     --text: #f8fafc;
     --secondary-text: #94a3b8;
 
-    --operator: #2563eb;
-    --operator-hover: #3b82f6;
+    --operator: #7c3aed;
+    --operator-hover: #8b5cf6;
 
-    --equals: #10b981;
-    --equals-hover: #34d399;
+    --equals: #f59e0b;
+    --equals-hover: #fbbf24;
 
-    --function: #334155;
-    --function-hover: #475569;
+    --function: #dc2626;
+    --function-hover: #ef4444;
 
     --border: rgba(255, 255, 255, 0.08);
 
