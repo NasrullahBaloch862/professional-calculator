@@ -465,8 +465,12 @@ function renderHistory() {
                     </div>
 
                     <div class="history-result">
-                        = ${escapeHTML(item.result)}
-                    </div>
+    = ${escapeHTML(item.result)}
+</div>
+
+<div class="history-time">
+    ${formatHistoryTime(item.time)}
+</div>
 
                 </div>
             `;
@@ -491,6 +495,12 @@ function renderHistory() {
                 }
             );
         });
+}
+function formatHistoryTime(timestamp) {
+    return new Date(timestamp).toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit"
+    });
 }
 
 
